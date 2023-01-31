@@ -25,8 +25,6 @@ namespace RecursiveFloodFill.Screens
             showGridID = false;
             GenerateMap();
             GenerateInfoText();
-
-
         }
 
         public override void Draw()
@@ -145,6 +143,8 @@ namespace RecursiveFloodFill.Screens
 
         private bool ValidateTile(Point _gridPosition)
         {
+            //Check that tile is not out of bounds
+
             if (_gridPosition.X >= 0 && _gridPosition.X < 20 & _gridPosition.Y >= 0 && _gridPosition.Y < 20)
                 return true;
             return false;
